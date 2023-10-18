@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: heroku_application_manager_development
+
+test:
+  <<: *default
+  database: heroku_application_manager_test
+
+production:
+  <<: *default
+  database: heroku_application_manager_production
+  username: heroku_application_manager
+  password: <%= ENV["HEROKU_APPLICATION_MANAGER_DATABASE_PASSWORD"] %>
