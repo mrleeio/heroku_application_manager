@@ -9,11 +9,11 @@ gem 'rails', '~> 7.1.1'
 gem 'bootsnap', require: false
 gem 'importmap-rails'
 gem 'jbuilder'
-gem 'pg', '~> 1.1'
-gem 'puma', '>= 5.0'
+gem 'pg'
+gem 'puma'
 gem 'rack-canonical-host'
-gem 'rack-timeout', '~> 0.6.3'
-gem 'redis', '>= 4.0.1'
+gem 'rack-timeout'
+gem 'redis'
 gem 'sprockets-rails'
 gem 'stimulus-rails'
 gem 'tailwindcss-rails'
@@ -22,12 +22,12 @@ gem 'tzinfo-data', platforms: %i[windows jruby]
 
 group :development, :test do
   gem 'debug', platforms: %i[mri windows]
-  gem 'rubocop', '~> 1.57'
-  gem 'rubocop-capybara', '~> 2.19'
-  gem 'rubocop-factory_bot', '~> 2.24'
-  gem 'rubocop-minitest', '~> 0.32.2'
-  gem 'rubocop-performance', '~> 1.19'
-  gem 'rubocop-rails', '~> 2.21'
+  gem 'rubocop'
+  gem 'rubocop-capybara'
+  gem 'rubocop-factory_bot'
+  gem 'rubocop-minitest'
+  gem 'rubocop-performance'
+  gem 'rubocop-rails'
 end
 
 group :development do
@@ -36,6 +36,6 @@ end
 
 group :test do
   gem 'capybara'
-  gem 'cuprite', '~> 0.14.3'
-  gem 'factory_bot_rails', '~> 6.2'
+  gem 'cuprite'
+  gem 'factory_bot_rails'
 end

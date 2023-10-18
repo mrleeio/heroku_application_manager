@@ -300,23 +300,23 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   capybara
-  cuprite (~> 0.14.3)
+  cuprite
   debug
-  factory_bot_rails (~> 6.2)
+  factory_bot_rails
   importmap-rails
   jbuilder
-  pg (~> 1.1)
-  puma (>= 5.0)
+  pg
+  puma
   rack-canonical-host
-  rack-timeout (~> 0.6.3)
+  rack-timeout
   rails (~> 7.1.1)
-  redis (>= 4.0.1)
-  rubocop (~> 1.57)
-  rubocop-capybara (~> 2.19)
-  rubocop-factory_bot (~> 2.24)
-  rubocop-minitest (~> 0.32.2)
-  rubocop-performance (~> 1.19)
-  rubocop-rails (~> 2.21)
+  redis
+  rubocop
+  rubocop-capybara
+  rubocop-factory_bot
+  rubocop-minitest
+  rubocop-performance
+  rubocop-rails
   sprockets-rails
   stimulus-rails
   tailwindcss-rails
