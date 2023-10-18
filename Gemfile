@@ -24,6 +24,7 @@ group :development, :test do
   gem 'debug', platforms: %i[mri windows]
   gem 'rubocop', '~> 1.57'
   gem 'rubocop-capybara', '~> 2.19'
+  gem 'rubocop-factory_bot', '~> 2.24'
   gem 'rubocop-minitest', '~> 0.32.2'
   gem 'rubocop-performance', '~> 1.19'
   gem 'rubocop-rails', '~> 2.21'
@@ -35,5 +36,6 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'factory_bot_rails', '~> 6.2'
   gem 'selenium-webdriver'
 end
