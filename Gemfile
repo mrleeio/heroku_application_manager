@@ -4,17 +4,18 @@ ruby "3.3.0"
 
 gem "rails", "~> 7.1.3"
 
-gem "propshaft"
-gem "pg"
-gem "puma"
+gem "high_voltage"
+gem "bootsnap", require: false
 gem "importmap-rails"
-gem "turbo-rails"
+gem "jbuilder"
+gem "pg"
+gem "propshaft"
+gem "puma"
+gem "redis"
 gem "stimulus-rails"
 gem "tailwindcss-rails"
-gem "jbuilder"
-gem "redis"
+gem "turbo-rails"
 gem "tzinfo-data", platforms: %i[ windows jruby ]
-gem "bootsnap", require: false
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
