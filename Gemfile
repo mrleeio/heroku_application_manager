@@ -18,6 +18,8 @@ gem "bootsnap", require: false
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
+  gem "rubocop-erb"
+  gem "rubocop-rails-omakase"
 end
 
 group :development do
