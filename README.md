@@ -37,6 +37,18 @@ Abort requests that are taking too long; an exception is raised.
 
 A timeout of 15s is the default. It's recommended to set the timeout as low as realistically viable for your application. You can modify this by setting the `RACK_TIMEOUT_SERVICE_TIMEOUT` environment variable.
 
+### Recipient Interceptor
+
+Use the `EMAIL_RECIPIENTS` environment variable to intercept mail sent from the application.
+
+Example:
+
+```
+EMAIL_RECIPIENTS="one@example.com,two@example.com"
+```
+
+Emails will be redirect to one@example.com and two@example.com.
+
 ## Testing
 
 Run non-system tests:
@@ -74,3 +86,4 @@ Use the `HEADLESS` environment variable to run tests in headless mode.
 #### Docker Mode
 
 User the `DOCKER` environment variable to add the `no-sandbox` option.
+
