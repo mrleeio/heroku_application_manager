@@ -23,6 +23,14 @@ Things you may want to cover:
 
 * ...
 
+## Configuration
+
+### Rack Canonical Host
+
+Rack middleware that lets you define a single host name as the canonical host for your application. Requests for other host names will then be redirected to the canonical host.
+
+Use the `APPLICATION_HOST` environment variable in the production environment.
+
 ## Testing
 
 Run non-system tests:

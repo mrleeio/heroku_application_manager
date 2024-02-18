@@ -4,13 +4,14 @@ ruby "3.3.0"
 
 gem "rails", "~> 7.1.3"
 
-gem "high_voltage"
 gem "bootsnap", require: false
+gem "high_voltage"
 gem "importmap-rails"
 gem "jbuilder"
 gem "pg"
 gem "propshaft"
 gem "puma"
+gem "rack-canonical-host"
 gem "redis"
 gem "stimulus-rails"
 gem "tailwindcss-rails"
