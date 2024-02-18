@@ -32,4 +32,5 @@ group :test do
   gem "capybara"
   gem "cuprite"
   gem "launchy"
+  gem "shoulda"
 end
