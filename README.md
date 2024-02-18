@@ -31,6 +31,12 @@ Rack middleware that lets you define a single host name as the canonical host fo
 
 Use the `APPLICATION_HOST` environment variable in the production environment.
 
+### Rack Timeout
+
+Abort requests that are taking too long; an exception is raised.
+
+A timeout of 15s is the default. It's recommended to set the timeout as low as realistically viable for your application. You can modify this by setting the `RACK_TIMEOUT_SERVICE_TIMEOUT` environment variable.
+
 ## Testing
 
 Run non-system tests:
