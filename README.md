@@ -37,6 +37,12 @@ Run system tests:
 bundle exec rails test:system
 ```
 
+### Factory Bot
+
+Ruby on Rails generates factories instead of fixtures by default. Factories are locationed in `test/factories/*`.
+
+For detailed instructions on how to use factories reference the official [documentation](https://thoughtbot.github.io/factory_bot/).
+
 ### Cuprite
 
 [Cuprite](https://github.com/rubycdp/cuprite) is a pure Ruby driver (read as no Selenium/WebDriver/ChromeDriver dependency) for [Capybara](https://github.com/teamcapybara/capybara). It allows you to run Capybara tests on a headless Chrome or Chromium. Under the hood it uses [Ferrum](https://github.com/rubycdp/ferrum#index) which is high-level API to the browser by CDP protocol.
