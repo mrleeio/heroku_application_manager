@@ -49,6 +49,63 @@ EMAIL_RECIPIENTS="one@example.com,two@example.com"
 
 Emails will be redirect to one@example.com and two@example.com.
 
+## Development
+
+### Based UUIID
+
+https://github.com/pch/based_uuid
+
+Generate “double-clickable”, URL-friendly UUIDs with optional prefixes.
+
+Inheriting off of `ApplicationRecord ` will automatically generate a non-prefixed Based UUID for all models:
+
+```
+user = User.last
+user.based_uuid #=> 12dm1qresn83st62reqdw7f7cv
+```
+
+Adding a prefix to your model can make Based UUIDs easier to identify:
+
+```
+class User < ApplicationRecord
+  has_based_uuid prefix: :user
+end
+
+user = User.last
+user.based_uuid #=> user_12dm1qresn83st62reqdw7f7cv
+```
+
+#### Default to Based UUID URL Identifiers
+
+By default, `ApplicationRecord` uses the Based UUID in the URL:
+
+> http://localhost:3000/users/user_01hq16adwnf10t9kenr2zj1qyf
+
+To enable Based UUID lookup in controllers ensure you use the following methods:
+
+```
+User.find_by_based_uuid("user_12dm1qresn83st62reqdw7f7cv")
+
+# or without the prefix:
+User.find_by_based_uuid("12dm1qresn83st62reqdw7f7cv")
+
+# there’s also the bang version:
+User.find_by_based_uuid!("12dm1qresn83st62reqdw7f7cv")
+```
+
+User controller example:
+
+```
+class UsersController < ApplicationController
+  ...
+  private
+  def set_user
+    @user = User.find_by_based_uuid(params[:id])
+  end
+  ...
+end
+```
+
 ## Testing
 
 Run non-system tests:

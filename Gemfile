@@ -4,6 +4,7 @@ ruby "3.3.0"
 
 gem "rails", "~> 7.1.3"
 
+gem "based_uuid"
 gem "bootsnap", require: false
 gem "bundler-audit"
 gem "high_voltage"

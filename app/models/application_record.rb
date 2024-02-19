@@ -3,6 +3,12 @@ class ApplicationRecord < ActiveRecord::Base
 
   before_create :set_uuid
 
+  has_based_uuid
+
+  def to_param
+    based_uuid
+  end
+
   private
 
   def set_uuid

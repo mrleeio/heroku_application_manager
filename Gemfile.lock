@@ -79,6 +79,8 @@ GEM
       public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
     base64 (0.2.0)
+    based_uuid (0.6.4)
+      activesupport (>= 7.0)
     better_html (2.0.2)
       actionview (>= 6.0)
       activesupport (>= 6.0)
@@ -344,6 +346,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  based_uuid
   bootsnap
   bullet
   bundler-audit
