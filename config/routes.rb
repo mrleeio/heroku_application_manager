@@ -7,4 +7,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  # Mount the MissionControl::Jobs::Engine at /jobs
+  mount MissionControl::Jobs::Engine, at: "/jobs"
 end
