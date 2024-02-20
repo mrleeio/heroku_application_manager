@@ -29,6 +29,7 @@ group :development, :test do
   gem "bullet"
   gem "debug", platforms: %i[ mri windows ]
   gem "factory_bot_rails"
+  gem "faker"
   gem "rubocop-erb"
   gem "rubocop-rails-omakase"
 end
