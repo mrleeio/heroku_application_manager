@@ -10,4 +10,8 @@ Rails.application.routes.draw do
 
   # Mount the MissionControl::Jobs::Engine at /jobs
   mount MissionControl::Jobs::Engine, at: "/jobs"
+
+  namespace :heroku do
+    resources :stacks
+  end
 end
